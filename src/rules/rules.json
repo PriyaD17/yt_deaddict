@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.youtube.com/watch?v=0iGdLDeyeso"
+        }
+      },
+      "condition": {
+        "urlFilter": "*://www.youtube.com/watch*",
+        "resourceTypes": ["main_frame"],
+        "run_at": "document_start"
+      }
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.youtube.com/watch?v=0iGdLDeyeso"
+        }
+      },
+      "condition": {
+        "urlFilter": "*://www.youtube.com/shorts*",
+        "resourceTypes": ["main_frame"],
+        "run_at": "document_start"
+      }
+    }
+  ]
+  
